@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".registro">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondoxd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_codigo_producto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_datos"
+                android:ems="10"
+                android:hint="cedula"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/Border_Button_loby"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txt_nombre_producto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_datos"
+                android:ems="10"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="@color/Border_Button_loby"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txt_precio_producto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_datos"
+                android:ems="10"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="@color/Border_Button_loby"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txt_stock_producto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_datos"
+                android:ems="10"
+                android:hint="Dirección"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="@color/Border_Button_loby"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txt_telefono"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_datos"
+                android:ems="10"
+                android:hint="Teléfono"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/Border_Button_loby"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txt_correo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_datos"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColor="@color/Border_Button_loby"
+                android:textColorHint="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_registrarse"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-100dp"
+                    android:background="@drawable/border_button"
+                    android:text="Registrar"
+                    android:textColor="#F4F3F3" />
+
+                <Button
+                    android:id="@+id/btn_cancelar_registro"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_button"
+                    android:text="Cancelar"
+                    android:textColor="#FDFDFD" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

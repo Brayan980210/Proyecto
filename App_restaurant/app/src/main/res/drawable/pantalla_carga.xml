@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/PantallaCarga"/>
+    <item>
+        <bitmap android:src="@drawable/taza"
+            android:gravity="center_horizontal"
+            />
+    </item>
+</layer-list>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/fondoxd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/taza" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txt_usuario"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/border_datos"
+                        android:ems="10"
+                        android:hint="Usuario"
+                        android:inputType="textEmailAddress"
+                        android:padding="20dp"
+                        android:textColor="@color/Border_Button_loby"
+                        android:textColorHint="@color/Border_Button_loby" />
+
+                    <EditText
+                        android:id="@+id/txt_contraseña"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_datos"
+                        android:ems="10"
+                        android:hapticFeedbackEnabled="false"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="20dp"
+                        android:textColor="@color/Border_Button_loby"
+                        android:textColorHint="@color/Border_Button_loby" />
+
+                    <Button
+                        android:id="@+id/btn_Iniciar_secion"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/border_button"
+                        android:text="Iniciar seción"
+                        app:backgroundTint="@color/Boton" />
+
+                    <Button
+                        android:id="@+id/btn_registrar_new_usuario"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_button"
+                        android:text="Registrate"
+                        app:backgroundTint="@color/Boton" />
+
+                    <Button
+                        android:id="@+id/btn_admin"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Admin" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
